@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+:root{
+    --HEADER-BG: #fcfaf7;
+    --SEARCH-BAR-BG: #f0ecec;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--HEADER-BG);
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    padding-left: 5px;
+    width: 40%;
+    background: var(--SEARCH-BAR-BG);
+}
+
+.search-submit{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.search-submit:hover{
+    cursor: pointer;
+}
+
+.search-input{
+    border: none;
+    background: transparent;
+}
+
+.search-input:focus{
+    outline: none;
+}
+
+.header-actions{
+    display: flex;
+    padding: 0px 5px;
+    gap: 2rem;
+}
