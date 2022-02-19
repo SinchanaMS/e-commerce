@@ -1,0 +1,35 @@
+.wishlist-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.container-title {
+    flex-basis: 100%;
+}
+
+.wishlist-container .card-container {
+    margin: auto 0px;
+}
+
+.wishlist-container .wishlist-badge {
+    background: none;
+    color: var(--DEFAULT-RED);
+}
+
+.wishlist-badge:hover {
+    cursor: pointer;
+}
+
+.wishlist-container .card-footer {
+    outline: none;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.wishlist-container .link-in-btn {
+    margin: 2rem;
+}
