@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/stylesheets/login-page.css">
+    <link rel="stylesheet" href="https://clay-ui.netlify.app/stylesheets/index.css">
+</head>
+
+<body>
+    <header class="header shadow">
+        <h2 class="brand-title">
+            <a href="/">brandName</a></h2>
+        <div class="search-bar">
+            <a class="search-submit">
+                <span class="material-icons material-icons-outlined">
+                    search
+                </span>
+            </a>
+            <input type="text" class="search-input" placeholder="Search">
+        </div>
+        <ul class="header-actions">
+            <li><a href="/" class="header-ctas">
+                    <div class="badge-icon-container">
+                        <span class="material-icons md-36 material-icons-outlined">
+                            person
+                        </span>
+                    </div>
+                </a></li>
+            <li><a href="/" class="header-ctas">
+                    <div class="badge-icon-container">
+                        <span class="material-icons md-36 material-icons-outlined">
+                            favorite_border
+                        </span>
+                        <div class="badge badge-text grey-badge">0</div>
+                    </div>
+                </a></li>
+            <li><a href="/" class="header-ctas">
+                    <div class="badge-icon-container">
+                        <span class="material-icons md-36 material-icons-outlined">
+                            shopping_cart
+                        </span>
+                        <div class="badge badge-text grey-badge">0</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="login-container shadow">
+        <h2 class="container-title">Login</h2>
+        <div class="login-details">
+            <div class="labelled-input label-top username">
+                <label class="label"> Email ID</label>
+                <input type="email" placeholder="jane.doe@email.com">
+            </div>
+            <div class="labelled-input label-top password">
+                <label class="label"> Password </label>
+                <input type="password" placeholder="************">
+            </div>
+
+            <div class="auth-opts">
+                <div class="checkbox-btn remember-me">
+                    <input type="checkbox" name="checkbox">
+                    <label class="label">Remember Me</label>
+                </div>
+                <a href="#" class="forgot-pwd">Forgot Password?</a>
+            </div>
+            <button class="btn link-btn-outline login-btn icon-dark">
+                <a href="#" class="link-in-btn p-lg">Login</a>
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="new-user">
+            <a href="#" class="link-in-btn p-lg">Create New Account</a>
+        </div>
+    </section>
+</body>
+
+</html>
