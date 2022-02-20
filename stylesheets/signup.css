@@ -1,0 +1,41 @@
+.sign-up-container{
+    background: var(--CARD-BG);
+    min-width: max-content;
+    width: fit-content;
+    border-radius: 5px;
+    border: none;
+    margin: 3rem auto;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.container-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.new-user-form{
+    max-width: 100%;
+    min-width: 40%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: auto;
+}
+
+.new-user-form input {
+    max-width: 100%;
+    min-width: 40%;
+    width: 20rem;
+    border: thin solid var(--DEFAULT-GREY);
+    border-radius: 4px; 
+    padding: 5px;
+}
+
+.signup-btn:hover{
+    cursor: pointer;
+}
+
+.existing-user{
+    text-align: center;
+}
