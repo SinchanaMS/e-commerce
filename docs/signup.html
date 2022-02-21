@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/stylesheets/signup.css">
     <link rel="stylesheet" href="https://clay-ui.netlify.app/stylesheets/index.css">
 </head>
 
@@ -25,29 +24,8 @@
         </div>
         <ul class="header-actions">
             <li><a href="/" class="header-ctas">
-                    <div class="badge-icon-container">
-                        <span class="material-icons md-36 material-icons-outlined">
-                            person
-                        </span>
-                    </div>
+                    <h4>Login</h4>
                 </a></li>
-            <li><a href="/" class="header-ctas">
-                    <div class="badge-icon-container">
-                        <span class="material-icons md-36 material-icons-outlined">
-                            favorite_border
-                        </span>
-                        <div class="badge badge-text grey-badge">0</div>
-                    </div>
-                </a></li>
-            <li><a href="/" class="header-ctas">
-                    <div class="badge-icon-container">
-                        <span class="material-icons md-36 material-icons-outlined">
-                            shopping_cart
-                        </span>
-                        <div class="badge badge-text grey-badge">0</div>
-                    </div>
-                </a>
-            </li>
         </ul>
     </header>
 </body>
@@ -61,14 +39,14 @@
         <input type="text" class="password" placeholder="Password" required>
         <input type="text" class="confirm-pwd" placeholder="Confirm Password" required>
         <div class="checkbox-btn t-and-c">
-            <input type="checkbox" name="checkbox">
+            <input type="checkbox" name="checkbox" required>
             <label class="label">I accept all Terms & Conditions</label>
         </div>
         <button class="btn link-btn-outline signup-btn icon-dark">
-            <a href="#" class="link-in-btn p-lg">Sign Up</a>
+            <a href="/index.html" class="link-in-btn p-lg">Sign Up</a>
         </button>
         <div class="existing-user">
-            <a href="#" class="link-in-btn p-lg">Already have an account</a>
+            <a href="/docs/login-page.html" class="link-in-btn p-lg">Already have an account</a>
         </div>
     </form>
 </section>

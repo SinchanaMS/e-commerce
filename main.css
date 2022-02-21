@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;300;400;700&display=swap");
 
+@import "/stylesheets/signup.css";
+@import "/stylesheets/login-page.css";
+@import "/stylesheets/prod-listing.css";
+@import "/stylesheets/wishlist.css";
+@import "/stylesheets/cart.css";
+
 :root {
     --HEADER-BG: #fcfaf7;
     --SEARCH-BAR-BG: #f0ecec;
     --CATEGORIES-BG: #f5ebeb;
     --CAROUSEL-BG: #f0eded;
-    --CAROUSEL-TEXT-BG:#dbd4d6;
+    --CAROUSEL-TEXT-BG: #dbd4d6;
     --NEW-ARRIVALS-BG: #ebdcdc;
 }
 
@@ -53,6 +59,7 @@ body {
 
 .header-actions {
     display: flex;
+    align-items: center;
     padding: 0px 5px;
     gap: 2rem;
 }
@@ -69,10 +76,13 @@ body {
     gap: 5px;
 }
 
+.grid-child {
+    position: relative;
+}
+
 .grids-5 .grid-child {
     height: 15rem;
     max-height: 100%;
-    position: relative;
 }
 
 .grids-5 .grid-child img {
@@ -169,9 +179,9 @@ body {
 }
 
 .new-arrivals .overlay-text {
-    padding: 2rem;
-    width: 93%;
-    opacity: 70%;
+    padding: 5px;
+    width: 90%;
+    opacity: 90%;
 }
 
 .grids-3 {
