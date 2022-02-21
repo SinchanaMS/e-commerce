@@ -21,6 +21,10 @@ body {
     font-weight: 400;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -199,7 +203,7 @@ body {
 }
 
 .new-arrivals .grids-3 .grid-child img {
-    height: auto;
+    height: 100%;
     width: 90%;
     max-height: 100%;
     margin: auto;
