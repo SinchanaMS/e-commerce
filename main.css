@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@1,700&family=Comforter&family=Montserrat:ital,wght@1,800&family=Open+Sans:wght@300;500&family=Roboto:wght@100;300;400;700&display=swap");
 
-:root{
+:root {
     --HEADER-BG: #fcfaf7;
     --SEARCH-BAR-BG: #f0ecec;
+    --CATEGORIES-BG: #f5ebeb;
+    --CAROUSEL-BG: #f0eded;
+    --CAROUSEL-TEXT-BG:#dbd4d6;
+    --NEW-ARRIVALS-BG: #ebdcdc;
 }
 
-body{
+body {
     font-family: Roboto, sans-sarif;
     font-weight: 400;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +23,7 @@ body{
     background: var(--HEADER-BG);
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -29,26 +33,165 @@ body{
     background: var(--SEARCH-BAR-BG);
 }
 
-.search-submit{
+.search-submit {
     text-align: center;
     padding-top: 5px;
 }
 
-.search-submit:hover{
+.search-submit:hover {
     cursor: pointer;
 }
 
-.search-input{
+.search-input {
     border: none;
     background: transparent;
 }
 
-.search-input:focus{
+.search-input:focus {
     outline: none;
 }
 
-.header-actions{
+.header-actions {
     display: flex;
     padding: 0px 5px;
     gap: 2rem;
+}
+
+.categories-base {
+    height: auto;
+    background: var(--CATEGORIES-BG);
+    padding-bottom: 7px
+}
+
+.grids-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.grids-5 .grid-child {
+    height: 15rem;
+    max-height: 100%;
+    position: relative;
+}
+
+.grids-5 .grid-child img {
+    height: 100%;
+    width: auto;
+    max-height: 90%;
+    margin: 1rem auto;
+    opacity: 80%;
+    border-radius: 5px;
+    outline: 1px solid var(--SECONDARY-COLOR);
+}
+
+.overlay-text {
+    width: 72%;
+    opacity: 90%;
+    margin: auto;
+}
+
+.overlay-text:hover {
+    cursor: pointer;
+}
+
+.carousel-base {
+    height: 25rem;
+    width: 96%;
+    margin: 1rem auto;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    overflow-x: scroll;
+    background: var(--CAROUSEL-BG)
+}
+
+.carousel-base::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    height: 100%;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+    display: flex;
+}
+
+.carousel-img {
+    height: 100%;
+    max-height: 100%;
+}
+
+.carousel-img img {
+    max-height: 100%;
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+
+.carousel-child:nth-child(2) {
+    background: var(--CAROUSEL-TEXT-BG);
+    padding: 1rem;
+    border-radius: 7px;
+}
+
+.grid-text {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.grid-text>button {
+    width: 50%;
+    align-self: center;
+}
+
+.grid-text>button:hover {
+    cursor: pointer;
+}
+
+.new-arrivals {
+    height: 20rem;
+    position: relative;
+    text-align: center;
+    background: var(--NEW-ARRIVALS-BG)
+}
+
+.new-arrivals h2 {
+    padding: 1rem;
+}
+
+.new-arrivals .overlay-text {
+    padding: 2rem;
+    width: 93%;
+    opacity: 70%;
+}
+
+.grids-3 {
+    display: grid;
+    height: 15rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 100%;
+    margin: auto;
+}
+
+.grids-3 .grid-child {
+    height: 15rem;
+    max-height: 100%;
+}
+
+.new-arrivals .grids-3 .grid-child img {
+    height: auto;
+    width: 90%;
+    max-height: 100%;
+    margin: auto;
+    outline: 1px solid var(--SECONDARY-COLOR);
 }
